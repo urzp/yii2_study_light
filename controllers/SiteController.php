@@ -123,4 +123,14 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionHello()
+    {
+        return 'hello world !';
+    }
+
+    public function actionHello2()
+    {
+        return 'hello world 2 !';
+    }
 }
