@@ -126,7 +126,8 @@ class SiteController extends Controller
 
     public function actionHello()
     {
-        return 'hello world !';
+        // return 'hello world !';
+        return $this->render('hello');
     }
 
     public function actionHello2()
