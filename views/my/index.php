@@ -2,6 +2,7 @@
 
  <?php echo $hi ?> 
  <br>
+ <?= $id ?>
  <br>
  <?php 
 
