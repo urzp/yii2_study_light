@@ -2,4 +2,5 @@
 
 <?php 
 
-\app\controllers\debug(Yii::$app);
+// \app\controllers\debug(Yii::$app);
+debug(Yii::$app);
