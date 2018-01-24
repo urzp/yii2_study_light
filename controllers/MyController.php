@@ -15,4 +15,10 @@ class MyController extends Controller
 		return $this->render('index',compact('hi', 'names', 'id'));
 	}
 
+	public function actionBlogPost(){
+		// my/blog-post
+		return "BLOG POST"; 
+	} 
+
+
 }
