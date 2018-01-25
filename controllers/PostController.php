@@ -7,7 +7,7 @@ use Yii;
 class PostController extends AppController
 {
 
-	// publiLc $layout = 'Basic';
+	public $layout = 'Basic';
 
 	public function actionIndex(){
 
@@ -15,7 +15,7 @@ class PostController extends AppController
 	}
 
 	public function actionShow(){
-		$this -> layout = 'Basic';
+		// $this -> layout = 'Basic';
 		return $this -> render('show');
 	}
 
