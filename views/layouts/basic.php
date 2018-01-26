@@ -26,8 +26,19 @@ AppAsset::register($this);
 <body>
     <?php $this->beginBody() ?>
 
-	<h1>Hello, Basic</h1>
-    <?= $content ?>
+	<div class="wrap">
+		<div class="conteiner">
+			<ul class="nav nav-pills">
+			  <li role="presentation" class="active"><a href="#">Home</a></li>
+			  <li role="presentation"><a href="#">Profile</a></li>
+			  <li role="presentation"><a href="#">Messages</a></li>
+			</ul>
+
+			<?= $content ?>
+			
+		</div>
+	</div>
+    
     <?php $this->endBody() ?>
 </body>
 </html>
