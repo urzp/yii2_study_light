@@ -10,6 +10,7 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
+
 AppAsset::register($this);
 ?>
 
@@ -29,9 +30,9 @@ AppAsset::register($this);
 	<div class="wrap">
 		<div class="conteiner">
 			<ul class="nav nav-pills">
-			  <li role="presentation" class="active"><a href="#">Home</a></li>
-			  <li role="presentation"><a href="#">Profile</a></li>
-			  <li role="presentation"><a href="#">Messages</a></li>
+			  <li role="presentation" class="active"><?= Html::a('Главная страница', '/web/') ?></li>
+			  <li role="presentation"><?= Html::a('Cтатьии', ['post/index']) ?></li>
+			  <li role="presentation"><?= Html::a('Статьия', ['post/show']) ?></li>
 			</ul>
 
 			<?= $content ?>
