@@ -11,7 +11,7 @@ class PostController extends AppController
 
 	public function actionIndex(){
 		if(Yii::$app->request->isAjax){
-			debug($_GET);
+			debug($_POST);
 			return 'test';
 		}
 		return $this -> render('test');
