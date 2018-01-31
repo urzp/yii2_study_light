@@ -2,6 +2,11 @@
 	// $this->title = 'Одна статья';
  ?>
 
+<?php $this->beginBlock('block1'); ?>
+	<h1>Заголовок страницы</h1>	
+<?php $this->endBlock(); ?>
+
+
 <h1>Show Action</h1>
 
 <?php // $this->registerJsFile('@web/js/script.js',['depends' => 'yii\web\YiiAsset']) ?> 
