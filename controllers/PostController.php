@@ -3,6 +3,7 @@
   namespace app\controllers;
 
 use Yii;
+use app\models\TestForm;
 
 class PostController extends AppController
 {
@@ -22,7 +23,10 @@ class PostController extends AppController
 			debug($_POST);
 			return 'test';
 		}
-		return $this -> render('test');
+
+		$model = new TestForm();
+
+		return $this -> render('test', compact('model'));
 	}
 
 	public function actionShow(){

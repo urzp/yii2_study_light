@@ -37,7 +37,6 @@ AppAsset::register($this);
 
 			<?php if(isset ($this->blocks['block1']) ): ?>
 				<?php echo $this->blocks['block1'] ; ?>
-
 			<?php endif ?>
 
 			<?= $content ?>
