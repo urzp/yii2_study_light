@@ -18,10 +18,11 @@
 
 ?>
 
-<?php $form = ActiveForm::begin() ?>
+<?php $form = ActiveForm::begin(['options'=> [ 'id' => 'testForm']]) ?>
 
-<?= $form->field($model, 'name') ?>
-<?= $form->field($model, 'email') ?>
-<?= $form->field($model, 'text') ?>
+<?= $form->field($model, 'name') -> Label('Имя') ?>
+<?= $form->field($model, 'email')->input('email') ?>
+<?= $form->field($model, 'text') -> label('Текст сообщения')->textarea(['rows'=> 10]) ?>
+<?= Html::submitButton('Отправить', ['class' => 'btn btn-success']) ?>
 
 <?php ActiveForm::end() ?>
